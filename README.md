@@ -1,6 +1,6 @@
 # text-file-extensions
 
-> non-exhaustive set of common plain-text file extensions
+> non-exhaustive list of common plain-text file extensions
 
 ```
 npm install text-file-extensions
