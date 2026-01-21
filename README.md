@@ -13,9 +13,11 @@ const textFileExtensions = require('text-file-extensions')
 ```
 
 ```js
-const ext = 'txt'
-console.log(textFileExtensions.has(ext)) // true
+extensions.has('txt') // true
+extensions.has('pdf') // false
 ```
+
+Values are lowercase strings without leading dot.
 
 ## License
 
