@@ -1,5 +1,5 @@
 /**
- * A non-exhaustive Set of common plain-text file extensions.
+ * Set of common plain-text file extensions (JavaScript ecosystem)
  */
 declare const textFileExtensions: Set<string>
 
