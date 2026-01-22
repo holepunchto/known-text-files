@@ -4,7 +4,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "type": "commonjs",
-  "description": "Set of common plain-text file extensions (JavaScript ecosystem)",
+  "description": "List of common plain-text file extensions",
   "scripts": {
     "lint": "prettier --check .",
     "format": "prettier --write .",

@@ -3,15 +3,15 @@ const test = require('brittle')
 const textFileExtensions = require('.')
 
 test('text extensions', function (t) {
-  t.ok(textFileExtensions instanceof Set)
-  t.ok(textFileExtensions.has('txt'))
-  t.ok(textFileExtensions.has('js'))
-  t.ok(textFileExtensions.has('mjs'))
+  t.ok(Array.isArray(textFileExtensions))
+  t.ok(textFileExtensions.includes('txt'))
+  t.ok(textFileExtensions.includes('js'))
+  t.ok(textFileExtensions.includes('mjs'))
 })
 
 test('non-text extensions', function (t) {
-  t.ok(textFileExtensions instanceof Set)
-  t.ok(!textFileExtensions.has('pdf'))
-  t.ok(!textFileExtensions.has('mp3'))
-  t.ok(!textFileExtensions.has('so'))
+  t.ok(Array.isArray(textFileExtensions))
+  t.ok(!textFileExtensions.includes('pdf'))
+  t.ok(!textFileExtensions.includes('mp3'))
+  t.ok(!textFileExtensions.includes('so'))
 })

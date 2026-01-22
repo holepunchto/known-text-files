@@ -1,6 +1,6 @@
 /**
- * Set of common plain-text file extensions (JavaScript ecosystem)
+ * List of common plain-text file extensions
  */
-declare const textFileExtensions: Set<string>
+declare const textFileExtensions: string[]
 
 export = textFileExtensions

@@ -1,6 +1,6 @@
 # text-file-extensions
 
-> Set of common plain-text file extensions (JavaScript ecosystem)
+> List of common plain-text file extensions
 
 ```
 npm install text-file-extensions
@@ -8,16 +8,24 @@ npm install text-file-extensions
 
 ## Usage
 
+Values are stored in an array of lowercase strings without a leading dot, e.g. `txt`
+
 ```js
 const textFileExtensions = require('text-file-extensions')
 ```
 
 ```js
-textFileExtensions.has('txt') // true
-textFileExtensions.has('pdf') // false
+textFileExtensions.includes('txt') // true
+textFileExtensions.includes('pdf') // false
 ```
 
-Values are lowercase strings without a leading dot.
+For faster `O(1)` lookups use `Set` or use [is-text-file](https://github.com/holepunchto/is-text-file)
+
+```js
+const extensionsSet = new Set(textFileExtensions)
+extensionsSet.has('txt') // true
+extensionsSet.has('pdf') // false
+```
 
 ## License
 
