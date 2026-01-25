@@ -4,9 +4,6 @@ const knownTextFiles = require('.')
 
 test('text extensions', function (t) {
   t.ok(Array.isArray(knownTextFiles))
-  t.ok(Array.isArray(knownTextFiles.extensions))
-  t.ok(Array.isArray(knownTextFiles.dotfiles))
-  t.ok(Array.isArray(knownTextFiles.files))
 
   t.ok(knownTextFiles.includes('.txt'))
   t.ok(knownTextFiles.includes('.js'))
@@ -15,10 +12,6 @@ test('text extensions', function (t) {
   t.ok(knownTextFiles.includes('.env'))
   t.ok(knownTextFiles.includes('dockerfile'))
   t.ok(knownTextFiles.includes('makefile'))
-
-  t.ok(knownTextFiles.extensions.includes('.txt'))
-  t.ok(knownTextFiles.dotfiles.includes('.gitignore'))
-  t.ok(knownTextFiles.files.includes('dockerfile'))
 })
 
 test('non-text extensions', function (t) {

@@ -9,12 +9,10 @@ npm install known-text-files
 ## Usage
 
 Extensions and dotfiles include the leading dot (e.g. `'.txt'`, `'.gitignore'`), all values are stored in lowercase strings.
-
-The default export is a merged array of all categories: `extensions`, `dotfiles`, and `files`.
+The export is a single array containing extensions, dotfiles, and extensionless filenames.
 
 ```js
 const knownTextFiles = require('known-text-files')
-const { extensions, dotfiles, files } = require('known-text-files')
 ```
 
 ```js
