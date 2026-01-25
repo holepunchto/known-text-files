@@ -4,7 +4,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "type": "commonjs",
-  "description": "List of common plain-text file extensions",
+  "description": "Unified list of plain-text file extensions, filenames and dotfiles",
   "scripts": {
     "lint": "prettier --check .",
     "format": "prettier --write .",
